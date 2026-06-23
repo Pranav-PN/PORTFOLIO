@@ -1,0 +1,119 @@
+{
+  "theme_and_archetype": {
+    "theme": "LIGHT",
+    "archetype": "Archetype 5 (Jewel & Luxury) blended with Archetype 1 (Organic & Earthy) for classical stone/marble aesthetics.",
+    "description": "A classical, museum-inspired portfolio designed to feel monumental, elegant, and timeless. Think sweeping marble halls, chiselled serif typography, gold foil accents, and statuesque imagery. High focus on slow, deliberate scroll animations to evoke walking through an art gallery."
+  },
+  "typography": {
+    "font_stacks": {
+      "headings": {
+        "family": "'Cormorant Garamond', serif",
+        "weight": "font-light to font-medium",
+        "tracking": "tracking-tight",
+        "usage": "H1, H2, large quotes, section titles."
+      },
+      "body": {
+        "family": "'Outfit', sans-serif",
+        "weight": "font-light",
+        "tracking": "tracking-normal",
+        "usage": "Body text, paragraphs, detailed descriptions."
+      },
+      "accent": {
+        "family": "'Cinzel', serif",
+        "weight": "font-medium",
+        "tracking": "tracking-[0.2em]",
+        "usage": "Overlines, small labels, button text, meander motifs text."
+      }
+    },
+    "scale": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl",
+      "h2": "text-4xl sm:text-5xl",
+      "h3": "text-2xl sm:text-3xl",
+      "body": "text-base md:text-lg",
+      "overline": "text-xs uppercase tracking-[0.2em]"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#F9F6F0",
+      "secondary": "#FFFFFF",
+      "marble_tint": "#F0EDE6"
+    },
+    "text": {
+      "primary": "#1A1A1A",
+      "secondary": "#5C5C5C",
+      "inverse": "#F9F6F0"
+    },
+    "accent": {
+      "gold_primary": "#D4AF37",
+      "gold_light": "#E8CE8A",
+      "gold_dark": "#997A15"
+    },
+    "surface": {
+      "glass": "bg-white/70 backdrop-blur-xl border border-white/40",
+      "card_solid": "bg-[#FFFFFF] border border-[#E5E0D8]",
+      "gold_gradient": "bg-gradient-to-r from-[#997A15] via-[#D4AF37] to-[#997A15]"
+    }
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous Spacing (Museum Gallery Style). Use 2-3x more padding than standard SaaS. Huge gaps between sections (py-32).",
+    "grids": "Use The 'Tetris' Grid (Mode A). Asymmetrical overlap between text columns and statue imagery.",
+    "borders": "1px solid #E5E0D8 for structural lines. Use the meander/Greek key pattern horizontally to separate major sections.",
+    "corners": "Sharp (rounded-none) or extremely subtle (rounded-sm) to mimic carved stone blocks. No large border radii."
+  },
+  "motion_and_interaction": {
+    "scroll": "MANDATORY: Use `lenis` for smooth momentum scrolling to make the site feel heavy and premium.",
+    "parallax": "Apply Framer Motion `useScroll` with varying `useTransform` speeds to background columns and foreground statues.",
+    "reveals": "Staggered text fade-ups (y: 40, opacity: 0 -> 1) on scroll using Framer Motion `whileInView`.",
+    "hover": "Slow transitions (duration-500). Buttons and links should feature a gold underline reveal or a soft gold inner shadow.",
+    "microinteractions": "Parallax floating gold specks or laurel leaves in the hero section."
+  },
+  "components": {
+    "buttons": {
+      "primary": "Solid #1A1A1A background, #F9F6F0 text, sharp corners, hover state adds a 1px #D4AF37 border and text turns #D4AF37.",
+      "secondary": "Transparent background, 1px solid #D4AF37 border, #1A1A1A text, hover state fills with #D4AF37 and text turns #FFFFFF."
+    },
+    "cards": {
+      "project_card": "No visible container background initially. Just the image, then text below. On hover, the image scales slowly (1.05) inside an overflow-hidden wrapper, and a gold border appears around the text block."
+    },
+    "dividers": {
+      "style": "Use repeated SVG or CSS pattern for Greek Meander (Key) lines, or simple 1px gold lines centered with a small diamond or laurel leaf SVG in the middle."
+    }
+  },
+  "sections_instructions": {
+    "hero": "Full height. Massive 'PRANAV PN' in Cormorant Garamond. Tagline underneath (B.Tech undergraduate VIT Chennai, aspiring software engineer). Overlapping a parallax Greek statue image. Gold accent lines.",
+    "about": "Asymmetrical layout. Large serif quote on the left, smaller Outfit body text on the right. Background features subtle marble texture overlay.",
+    "projects": "Bento or staggered masonry layout. Museum-like placards for project descriptions (white box with 1px border over the image edge).",
+    "skills": "List view with 'editorial ribbon' marquee scrolling horizontally across the background featuring skills in large, low-contrast serif text. Foreground has crisp cards.",
+    "experience": "Vertical timeline mimicking a classical pillar. Nodes are gold diamonds. Dates in overline style.",
+    "testimonials": "Carousel (Shadcn/Framer Motion). Styled like stone tablets or framed museum quotes.",
+    "contact": "Shadcn form. Styled minimally with bottom-border-only inputs (border-b border-[#E5E0D8]), no background on inputs. Focus state turns border gold."
+  },
+  "media_assets": {
+    "images": {
+      "hero_statue": {
+        "url": "https://images.unsplash.com/photo-1571033690858-b336bfa1dd0f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxncmVlayUyMG1hcmJsZSUyMHN0YXR1ZXxlbnwwfHx8fDE3Nzg4NjQyMjN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Grecian male statue looking up. Use with transparent/masking if possible, or overlay blend mode."
+      },
+      "hero_statue_alt": {
+        "url": "https://images.unsplash.com/photo-1670813885725-e3c5391dcd31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwzfHxncmVlayUyMG1hcmJsZSUyMHN0YXR1ZXxlbnwwfHx8fDE3Nzg4NjQyMjN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Black and white statue of a woman. Good for dark contrast areas."
+      },
+      "marble_texture_bg": {
+        "url": "https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMG1hcmJsZSUyMHRleHR1cmV8ZW58MHx8fHwxNzc4ODY0MjIzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "White marble surface texture. Use as a low-opacity background overlay (mix-blend-multiply or opacity-20)."
+      },
+      "column_bg": {
+        "url": "https://images.unsplash.com/photo-1531816458010-fb7685eecbcb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwxfHxhbmNpZW50JTIwZ3JlZWslMjBhcmNoaXRlY3R1cmUlMjBjb2x1bW58ZW58MHx8fHwxNzc4ODY0MjIzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "The Parthenon / Greek Columns. Excellent for the Experience timeline background or parallax scroll background."
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "usage": "Use sparingly. Prefer text links over icons to maintain the classical feel. If needed, use extremely thin stroke weights (strokeWidth={1})."
+    }
+  },
+  "testing": {
+    "attributes": "All interactive elements (buttons, form inputs, carousel controls) MUST include `data-testid` in kebab-case."
+  }
+}
