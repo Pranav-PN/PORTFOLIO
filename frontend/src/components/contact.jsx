@@ -5,7 +5,7 @@ import { toast, Toaster } from "sonner";
 import { profile } from "../data/portfolio";
 import { Meander, GoldRule } from "./ornaments";
 
-const API = `${import.meta.env.VITE_BACKEND_URL || import.meta.env.REACT_APP_BACKEND_URL || ""}/api`;
+const FORMSPREE_URL = "https://formspree.io/f/xjgqgjan";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -26,13 +26,15 @@ export default function Contact() {
     }
     setLoading(true);
     try {
-      await axios.post(`${API}/contact`, form);
+      await axios.post(FORMSPREE_URL, form, {
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
       toast.success("Your message has been carved in stone. I'll reply soon.");
       setForm({ name: "", email: "", subject: "", message: "" });
     } catch (err) {
-      const detail =
-        err?.response?.data?.detail || "The oracle did not answer. Try again.";
-      toast.error(typeof detail === "string" ? detail : "Submission failed.");
+      toast.error("The oracle did not answer. Try again.");
     } finally {
       setLoading(false);
     }
@@ -128,6 +130,7 @@ export default function Contact() {
                 </span>
                 <input
                   type="text"
+                  name="name"
                   value={form.name}
                   onChange={update("name")}
                   placeholder="Your name"
@@ -142,6 +145,7 @@ export default function Contact() {
                 </span>
                 <input
                   type="email"
+                  name="email"
                   value={form.email}
                   onChange={update("email")}
                   placeholder="you@domain.com"
@@ -158,6 +162,7 @@ export default function Contact() {
               </span>
               <input
                 type="text"
+                name="subject"
                 value={form.subject}
                 onChange={update("subject")}
                 placeholder="What shall we speak of?"
@@ -171,6 +176,7 @@ export default function Contact() {
                 MESSAGE
               </span>
               <textarea
+                name="message"
                 value={form.message}
                 onChange={update("message")}
                 placeholder="Inscribe your thoughts here..."
