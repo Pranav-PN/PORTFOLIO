@@ -306,3 +306,14 @@ textarea.museum-input {
         display: contents !important;
     }
 }
+
+/* Force hide the Emergent platform branding watermark overlay */
+[class*="emergent"], 
+[id*="emergent"],
+div[class*="fixed bottom-4 right-4"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
