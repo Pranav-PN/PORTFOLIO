@@ -7,23 +7,22 @@ export const profile = {
   role: "Aspiring Software Engineer",
   location: "VIT Chennai · India",
   tagline:
-    "B.Tech undergraduate sculpting code into form. Second-year student of computer science, apprenticed to the craft of software.",
+    "B.Tech undergraduate sculpting code into form. Third-year student of computer science, apprenticed to the craft of software.",
   shortBio:
-    "I am Pranav — a second-year B.Tech student at VIT Chennai, fascinated by the architecture beneath modern software. I study systems the way the ancients studied stone: patiently, and with intent. My work explores web engineering, algorithms, and the quiet art of writing code that endures.",
+    "I am Pranav — a Third-year B.Tech student at VIT Chennai, fascinated by the architecture beneath modern software. I study systems the way the ancients studied stone: patiently, and with intent. My work explores web engineering, algorithms, and the quiet art of writing code that endures.",
   resumeUrl: "#",
-  email: "pranav.pn@example.com",
+  email: "pranavpn2006@gmail.com",
   socials: [
-    { label: "GitHub", href: "https://github.com/" },
-    { label: "LinkedIn", href: "https://linkedin.com/" },
-    { label: "Twitter", href: "https://x.com/" },
-    { label: "Email", href: "mailto:pranav.pn@example.com" },
+    { label: "GitHub", href: "https://github.com/Pranav-PN" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/pranav-p-n-9729691b5/" },
+    { label: "Leetcode", href: "https://leetcode.com/u/pranav_P_N/" },
+    { label: "Gmail", href: "pranavpn2006@gmail.com" },
   ],
 };
 
 export const stats = [
-  { value: "2nd", label: "Year of Study" },
+  { value: "3nd", label: "Year of Study" },
   { value: "12+", label: "Projects Sculpted" },
-  { value: "8.9", label: "Current CGPA" },
   { value: "∞", label: "Curiosity" },
 ];
 
